@@ -1,0 +1,176 @@
+body {
+    background-color: black;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+.container{
+  padding: 0%;
+  margin: 0%;
+}
+a{
+  color:#fff;
+}
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .dropdown-btn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .sidenav a:hover {
+    color: #fff;
+  }
+
+  .dropdown-btn:hover{
+    color: #fff;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.dropdown-container {
+  display: none;
+  background-color: #111;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.logo{
+  display: inline-block;
+  position: absolute;
+  margin: 0% 28%;
+  text-align: center;
+  width: 100px;
+}
+
+.slide_news{
+  display: block;
+  position: absolute;
+  margin: 0% 0%;
+  margin-top: 35%;
+  padding: 0%;
+}
+
+.slide_news p{
+  text-align: center;
+}
+
+.mySlides{
+  padding: 5% 10%;
+  margin: 0%;
+  max-width: 76%;
+}
+
+.posts{
+  margin: 0%;
+  margin-top: 85%;
+  padding: 10%;
+  padding-bottom:0%;
+}
+
+.main_post{
+  margin: 0%;
+  padding: 0%;
+  width: 300px;
+  height: 250px;
+}
+
+.post_title{
+  padding: 0%;
+  margin: 0%;
+  font-size: 100%;
+}
+
+.post_text{
+  padding: 1%;
+  margin: 0%;
+  text-align: left;
+  width: 300px;
+}
+
+.post_img{
+  padding: 0%;
+  margin: 0%;
+  max-width: 109%;
+}
+
+.post{
+  margin-top: 40%;
+  padding: 0% 10%;
+}
+
+.post img{
+  max-width: 98%;
+}
+
+.home_footer{
+  margin: 0%;
+  padding: 2% 10%;
+}
+
+.contatos{
+  margin: 0%;
+  padding: 0%;
+}
+
+.newsletter{
+  margin: 0%;
+  padding: 0%;
+}
+
+.box{
+  width: 300px;
+  height: 30px;
+}
+
+#subscrever{
+  margin: 0%;
+  margin-top: 3%;
+  width: 150px;
+  height: 40px;
+}
+
+.main_footer{
+  text-align: center;
+}
