@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "Kiona";
-    src: url("../Assets/fonts/Kiona/Kiona-Regular.ttf");
+    src: url("../fonts/Kiona/Kiona-Regular.ttf");
 	font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Kiona";
-    src: url("../Assets/fonts/Kiona/Kiona-Itallic.ttf");
+    src: url("../fonts/Kiona/Kiona-Itallic.ttf");
 	font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -30,7 +30,7 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url("../Assets/fonts/Montserrat/Montserrat-Light.ttf");
+    src: url("../fonts/Montserrat/Montserrat-Light.ttf");
 	font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url("../Assets/fonts/Montserrat/Montserrat-Regular.ttf");
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
 	font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -50,7 +50,7 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url("../Assets/fonts/Montserrat/Montserrat-Italic.ttf");
+    src: url("../fonts/Montserrat/Montserrat-Italic.ttf");
 	font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -60,7 +60,7 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url("../Assets/fonts/Montserrat/Montserrat-Medium.ttf");
+    src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
 	font-weight: 500;
     font-style: normal;
     font-display: swap;
