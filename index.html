@@ -1,125 +1,158 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/fontawesome/all.css">
+    <link rel="stylesheet" href="wwwroot/css/fonts.css">
+    <link rel="stylesheet" href="wwwroot/css/variables.css">
+    <link rel="stylesheet" href="wwwroot/css/main.css">
     <title>Street Muzik | Home</title>
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Home</a>
-                <button class="dropdown-btn">Sobre Nós
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="quemsomos.html">Quem Somos ?</a>
-                    <a href="anossaequipa.html">A Nossa Equipa</a>
+    <header>
+        <p class="title"><a href="index.html">STREET MUZIK</a></p>
+        <nav>
+            <ul>
+                <li><a href="about-us.html">SOBRE NÓS</a></li>
+                <li><a href="news.html">NOVIDADES</a></li>
+                <li><a href="discography.html">DISCOGRAFIA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hp-banner banner">
+        <div class="slider">
+            <div class="slide">
+                <div class="image">
+                    <img src="assets/img/Ringue.png" alt="slide">
                 </div>
-                <a href="#">Novidades</a>
-                <a href="#">Concertos</a>
-                <div class="dropdown-container">
-                    <a href="#">28 de Janeiro 2017</a>
-                    <a href="#">14 de Junho 2017</a>
-                </div>
-                <button class="dropdown-btn">Produções
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="#">Lyric Videos</a>
-                    <a href="#">Videoclips</a>
-                </div>
-                <button class="dropdown-btn">Produções
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="#">Street Muzik</a>
-                    <a href="#">Invasion Boyz</a>
-                    <a href="#">Skull</a>
-                    <a href="#">Xibinho</a>
+                <div class="content">
+                    <p class="date">01/01/2020</p>
+                    <p><a class="title" href="#">DEEZY X XIBINHO - RINGUE(REMIX)</a></p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit debitis enim consequuntur ut mollitia laudantium atque!</p>
                 </div>
             </div>
-            <span style="font-size:30px;cursor:pointer; color: white" onclick="openNav()">&#9776;</span>
-            <p class="logo">
-                <a href="index.html">
-                    <img src="images/StreetMuzik_logo.svg" alt="Street Muzik Logo">
+            <div class="slide">
+                <div class="image">
+                    <img src="assets/img/Eles Disseram.png" alt="slide">
+                </div>
+                <div class="content">
+                    <p class="date">02/02/2020</p>
+                    <p><a class="title" href="#">XIBINHO - ELES DISSERAM</a></p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit debitis enim consequuntur ut mollitia laudantium atque!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="highlights">
+        <div class="list">
+            <div class="post">
+                <a href="#">
+                    <div class="image">
+                        <img src="assets/img/Alma_Chora.jpg" alt="post">
+                    </div>
+                    <div class="info">
+                        <p class="date">01/01/2020</p>
+                        <p class="title">Skull - Alma Chora</p>
+                        <p class="description">A "Alma Chora" é o primeiro single do próximo projeto "Dilemas" do rapper Skull.</p>
+                    </div>
                 </a>
-            </p>
-        </header>
-        <div class="slide_news">
-            <p><img class="mySlides" src="images/Alma_Chora.jpg">
-                <img class="mySlides" src="images/Evolução.jpg">
-                <img class="mySlides" src="images/Fala_Mais.jpg">
-                <img class="mySlides" src="images/Antes_Que_Digas.jpg">
-                <img class="mySlides" src="images/Meu_Sonho.jpg"></p>
+            </div>
+            <div class="post">
+                <a href="#">
+                    <div class="image">
+                        <img src="assets/img/Evolução.jpg" alt="post">
+                    </div>
+                    <div class="info">
+                        <p class="date">01/01/2020</p>
+                        <p class="title">Xibinho - Evolução</p>
+                        <p class="description">O rapper Xibinho após ter lançado 3 singles lança a intro da sua nova Mixtape</p>
+                    </div>
+                </a>
+            </div>
+            <div class="post">
+                <a href="#">
+                    <div class="image">
+                        <img src="assets/img/Fala_Mais.jpg" alt="post">
+                    </div>
+                    <div class="info">
+                        <p class="date">01/01/2020</p>
+                        <p class="title">Xibinho - Fala Mais</p>
+                        <p class="description">O membro do grupo Invasion Boyz (Xibinho) lançou o seu terceiro single.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="post">
+                <a href="#">
+                    <div class="image">
+                        <img src="assets/img/Antes_Que_Digas.jpg" alt="post">
+                    </div>
+                    <div class="info">
+                        <p class="date">01/01/2020</p>
+                        <p class="title">Xibinho - Antes Que Digas</p>
+                        <p class="description">O membro do grupo Invasion Boyz (Xibinho) lançou o seu segundo single.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="post">
+                <a href="#">
+                    <div class="image">
+                        <img src="assets/img/Body.jpg" alt="post">
+                    </div>
+                    <div class="info">
+                        <p class="date">01/01/2020</p>
+                        <p class="title">Jack Wilson - BODY</p>
+                        <p class="description">O rapper Jack Wilson lançou mais uma faixa desta vez trouxe-nos "BODY".</p>
+                    </div>
+                </a>
+            </div>
+            <div class="post">
+                <a href="#">
+                    <div class="image">
+                        <img src="assets/img/Meu_Sonho.jpg" alt="post">
+                    </div>
+                    <div class="info">
+                        <p class="date">01/01/2020</p>
+                        <p class="title">Xibinho - Vou Atrás Do Meu Sonho</p>
+                        <p class="description">O membro do grupo Invasion Boyz (Xibinho) lançou o seu primeiro single.</p>
+                    </div>
+                </a>
+            </div>
         </div>
-
-        <div class="posts">
-            <div class="main_post">
-                <h1 class="post_title">Skull - Alma Chora</h1>
-                <p class="post_text">A "Alma Chora" é o primeiro single do próximo projeto "Dilemas" do rapper Skull.<a
-                        href="/Posts/Skull/skull_almachora.html">Ver Mais</a></p>
-                <img class="post_img" src="images/Alma_Chora.jpg" alt="skull-almachora">
+    </section>
+    <section class="newsletter">
+        <div class="container">
+            <div class="group">
+                <h2 class="title">Newsletter</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="main_post">
-                <h1 class="post_title">Xibinho - Evolução</h1>
-                <p class="post_text"> O rapper Xibinho após ter lançado 3 singles lança a intro da sua nova Mixtape<a
-                        href="xibinho_evolucao.html">Ver Mais</a></p>
-                <img class="post_img" src="images/Evolução.jpg" alt="skull-almachora">
+            <form method="get">
+                <input placeholder="Email" type="email" name="email">
+                <button class="submit" type="submit">Subscrever</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="group">
+            <div class="contacts">
+                <h2>Contactos</h2>
+                <p><a href="tel:+351963278074">+351 963 278 074</a></p>
+                <p><a href="mailto:streetmuziksm@gmail.com">streetmuziksm@gmail.com</a></p>
             </div>
-            <div class="main_post">
-                <h1 class="post_title">Xibinho - Fala Mais</h1>
-                <p class="post_text">O membro do grupo Invasion Boyz (Xibinho) lançou o seu terceiro single.<a href="xibinho_falamais.html">Ver
-                        Mais</a> </p>
-                <img class="post_img" src="images/Fala_Mais.jpg" alt="xibinho-falamais">
-            </div>
-            <div class="main_post">
-                <h1 class="post_title">Xibinho - Antes Que Digas</h1>
-                <p class="post_text">O membro do grupo Invasion Boyz (Xibinho) lançou o seu segundo single.<a href="xibinho_antesquedigas.html">Ver
-                        Mais</a> </p>
-                <img class="post_img" src="images/Antes_Que_Digas.jpg" alt="skull-almachora">
-            </div>
-            <div class="main_post">
-                <h1 class="post_title">Xibinho - Vou Atrás Do Meu Sonho</h1>
-                <p class="post_text">O membro do grupo Invasion Boyz (Xibinho) lançou o seu primeiro single.<a href="xibinho_meusonho.html">Ver
-                        Mais</a></p>
-                <img class="post_img" src="images/Meu_Sonho.jpg" alt="skull-almachora">
-            </div>
-            <div class="main_post">
-                <h1 class="post_title">Jack Wilson - BODY</h1>
-                <p class="post_text">O rapper Jack Wilson lançou mais uma faixa desta vez trouxe-nos "BODY".<a href="jackwilson_body.html">Ver
-                        Mais</a></p>
-                <img class="post_img" src="images/Body.jpg" alt="skull-almachora">
+            <div class="social">
+                <h2>Redes Sociais</h2>
+                <a class="fab fa-facebook-f" href="#"></a>
+                <a class="fab fa-instagram" href="#"></a>
+                <a class="fab fa-twitter" href="#"></a>
+                <a class="fab fa-youtube" href="#"></a>
             </div>
         </div>
-        <section class="home_footer">
-            <div class="contatos">
-                <h1>Contatos</h1>
-                <p>Facebook | <a href="www.facebook.com/streetmuziksm">StreetMuzikSM</a></p>
-                <p>Instagram | <a href="www.instagram.com/streetmuziksm">@streetmuziksm</a></p>
-                <p>Twitter | <a href="www.twitter.com/streetmuziksm">@streetmuziksm</a></p>
-                <p>E-mail | <a href="streetmuziksm@gmail.com">streetmuziksm@gmail.com</a></p>
-            </div>
-            <div class="newsletter">
-                <h1>Newsletter</h1>
-                <h3>Subscreve ao nosso newsletter e fica a saber das novidades em primeira mão!</h3>
-                <input class="box" type="email" name="email" placeholder="Insira o seu e-mail">
-                <button id="subscrever">Subscrever</button>
-            </div>
-        </section>
-        <footer class="main_footer">
-            <p>Todos os Direitos Reservados &copy; Street Muzik by Nuno Pereira</p>
-        </footer>
-        <script src="js/nav_mobile.js"></script>
-        <script src="js/slide.js"></script>
-    </div>
+        <p>2014-2020 &copy; Street Muzik by <a href="#">Nuno Pereira</a></p>
+    </footer>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="wwwroot/js/main.js"></script>
 </body>
-
 </html>

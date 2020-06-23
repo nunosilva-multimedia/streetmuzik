@@ -1,0 +1,67 @@
+/*************************************************/
+/*************** Kiona Family ***************/
+/*************************************************/
+
+/********** Kiona Regular **********/
+
+@font-face {
+    font-family: "Kiona";
+    src: url("../Assets/fonts/Kiona/Kiona-Regular.ttf");
+	font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/********** Kiona Italic **********/
+
+@font-face {
+    font-family: "Kiona";
+    src: url("../Assets/fonts/Kiona/Kiona-Itallic.ttf");
+	font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*************************************************/
+/*************** Montserrat Family ***************/
+/*************************************************/
+
+/********** Montserrat Light **********/
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../Assets/fonts/Montserrat/Montserrat-Light.ttf");
+	font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/********** Montserrat Regular **********/
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../Assets/fonts/Montserrat/Montserrat-Regular.ttf");
+	font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/********** Montserrat Italic **********/
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../Assets/fonts/Montserrat/Montserrat-Italic.ttf");
+	font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/********** Montserrat Medium **********/
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../Assets/fonts/Montserrat/Montserrat-Medium.ttf");
+	font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

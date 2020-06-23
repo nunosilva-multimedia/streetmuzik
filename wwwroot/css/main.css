@@ -1,0 +1,1054 @@
+:root {
+    font-size: 13px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family2);
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--orange); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6d1216; 
+}
+
+.title-page{
+    text-transform: uppercase;
+    background-color: var(--orange);
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 4rem;
+    font-weight: 500;
+    font-style: normal;
+    padding: 75px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .title-page {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+/***********************HEADER**************************/
+header{
+    padding: 16px 25px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(187, 32, 37, .5);
+    z-index: 999;
+    transition: var(--transition);
+}
+
+header .title a{
+    font-size: 2.5rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    display: inline-block;
+    position: relative;
+    padding: 5px 16px;
+}
+
+header nav ul li a{
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+}
+
+header nav ul li a:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--white);
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+
+header nav ul li a:hover:after{
+    width: 100%;
+    left: 0;
+    background: var(--white);
+}
+
+header.fixed{
+    background-color: var(--white);
+}
+
+header.fixed, header.fixed .title a, header.fixed nav li a{
+    color: var(--black);
+}
+
+header.fixed nav ul li a:after{
+    background: var(--orange);
+}
+
+header.fixed nav ul li a:hover:after{
+    background: var(--orange);
+}
+
+@media only screen and (max-width: 720px) {
+
+    nav{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    header .title a {
+        font-size: 1.75rem;
+    }
+
+}
+/***********************END HEADER**************************/
+
+/***********************HP BANNER**************************/
+.hp-banner{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.hp-banner .slider .slide{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.hp-banner .slider .slide .image {
+    position: relative;
+    width: 100%;
+}
+
+.hp-banner .slider .slide .image::after{
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, .85);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.hp-banner .slider .slide .image img{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hp-banner .slider .slide .content{
+    padding: 0px 60px;
+    position: absolute;
+    color: var(--white);
+    bottom: 0;
+    max-width: 800px;
+}
+
+.hp-banner .slider .slide .content p{
+    padding-bottom: 20px;
+}
+
+.hp-banner .slider .slide .content .date{
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
+.hp-banner .slider .slide .content .title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.hp-banner .slider .slide .content .title:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 60px;
+    background: var(--orange);
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+
+.hp-banner .slider .slide .content .title:hover:after{
+    width: 85%;
+    left: 60px;
+    background: var(--orange);
+}
+
+.hp-banner .slider .slide .content .description{
+    font-size: 1.75rem;
+}
+
+@media only screen and (max-width: 475px) {
+
+    .hp-banner .slider .slide .content{
+        padding: 0px 30px;
+    }
+
+    .hp-banner .slider .slide .content .date{
+        font-size: .75rem;
+    }
+    
+    .hp-banner .slider .slide .content .title{
+        font-size: 1.7rem;
+    }
+
+    .hp-banner .slider .slide .content .description{
+        font-size: 1.25rem;
+    }
+    
+}
+/***********************END HP BANNER**************************/
+
+/***********************HIGHLIGHTS**************************/
+.highlights {
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.highlights .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1275px;
+}
+
+.highlights .list .post{
+    margin: 0;
+    background-color: var(--orange);
+    display: flex;
+    position: relative;
+    max-width: 400px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.highlights .list .post:hover .info{
+    bottom: 0;
+}
+
+.highlights .list .post .info{
+    padding: 10px;
+    position: absolute;
+    background-color: rgba(187, 32, 37, .9);
+    color: var(--white);
+    transition: var(--transition);
+    bottom: -100%;
+}
+
+.highlights .list .post .date{
+    font-weight: 300;
+    font-size: .75rem;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+.highlights .list .post .title{
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.highlights .list .post:hover .image{
+    transition: var(--transition);
+}
+
+.highlights .list .post:hover .image::after{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(187, 32, 37, .5);
+}
+
+.highlights .list .post .image img{
+    display: block;
+    width: 100%;
+}
+/***********************END HIGHLIGHTS**************************/
+
+/***********************NEWSLETTER**************************/
+.newsletter{
+    background-color: #410b0d;
+    padding: 40px 0;
+    display: flex;
+}
+
+.newsletter .container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.newsletter .container .group{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.newsletter .container .group h2{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-bottom: 8px;
+    align-self: start;
+    font-family: var(--font-family2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.newsletter .container .group .text{
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+.newsletter form{
+    display: flex;
+    max-width: 900px;
+}
+
+.newsletter input{
+    margin: 0 8px 0 0;
+    padding: 8px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.3rem;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid var(--orange);
+}
+
+.newsletter .submit{
+    padding: 10px 15px;
+    background-color: var(--orange);
+    font-family: var(--font-family2);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: 2px solid var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 945px) {
+
+    .newsletter .container .group {
+        max-width: 461px;
+    }
+
+    .newsletter .container .group h2 {
+        justify-content: center;
+    }
+
+    .newsletter .container .group .text {
+        text-align: center;
+    }
+
+    .newsletter form {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .newsletter input {
+        margin: 20px 4px 20px 4px;
+    }
+    
+}
+
+/***********************END NEWSLETTER**************************/
+
+/***********************FOOTER**************************/
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .group{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1275px;
+}
+
+footer .group div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: normal;
+    width: 250px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+footer .group div h2{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-self: baseline;
+    padding-bottom: 15px;
+    font-family: var(--font-family2);
+    font-weight: 500;
+    font-style: normal;
+}
+
+footer .group .contacts p{
+    color: var(--white);
+    font-size: 1.15rem;
+    transition: var(--transition);
+    padding: 5px 0;
+}
+
+footer .group .social a{
+    color: var(--white);
+    font-size: 3rem;
+    padding: 0 10px;
+    transition: var(--transition);
+}
+
+footer .contacts p a:hover, footer .social a:hover{
+    color: var(--orange);
+}
+
+footer > p a {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+footer > p a:hover{
+    color: var(--orange);
+}
+
+@media only screen and (max-width: 509px) {
+
+    footer .group .contacts p {
+        font-size: 1rem;
+    }
+    
+    footer .group .social a {
+        font-size: 2rem;
+    }
+
+    footer > p, footer > p a {
+        font-size: .75rem;
+    }
+}
+/***********************END FOOTER**************************/
+
+/***********************NEWS**************************/
+.last-news {
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 10px 0;
+}
+
+.last-news .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1275px;
+}
+
+.last-news .list .post{
+    margin: 0;
+    background-color: var(--orange);
+    display: flex;
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.last-news .list .post:hover .info{
+    bottom: 0;
+}
+
+.last-news .list .post .info{
+    padding: 10px;
+    position: absolute;
+    background-color: rgba(187, 32, 37, .9);
+    color: var(--white);
+    transition: var(--transition);
+    bottom: -100%;
+}
+
+.last-news .list .post .date{
+    font-weight: 300;
+    font-size: .75rem;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+.last-news .list .post .title{
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.last-news .list .post:hover .image{
+    transition: var(--transition);
+}
+
+.last-news .list .post:hover .image::after{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(187, 32, 37, .2);
+}
+
+.last-news .list .post .image img{
+    display: block;
+    width: 100%;
+}
+/***********************END NEWS**************************/
+
+/***********************DISCOGRAPHY**************************/
+.last-discs {
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 10px 0;
+}
+
+.last-discs .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.last-discs .list .post{
+    margin: 0;
+    background-color: var(--orange);
+    display: flex;
+    position: relative;
+    max-height: 450px;
+    max-width: 450px;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.last-discs .list .post:hover .image img{
+    transform: scale(1.5);
+}
+
+.last-discs .list .post:hover .image::after{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(187, 32, 37, .5);
+}
+
+.last-discs .list .post .image{
+    position: relative;
+    transition: var(--transition);
+}
+
+.last-discs .list .post .image img{
+    display: block;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    transition: var(--transition);
+}
+
+.discs {
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.discs .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.discs .list .post{
+    margin: 0;
+    background-color: var(--orange);
+    display: flex;
+    position: relative;
+    max-height: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.discs .list .post:hover .image img{
+    transform: scale(1.5);
+}
+
+.discs .list .post:hover .image::after{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(187, 32, 37, .2);
+}
+
+.discs .list .post .image{
+    position: relative;
+    transition: var(--transition);
+}
+
+.discs .list .post .image img{
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: var(--transition);
+}
+/***********************END DISCOGRAPHY**************************/
+
+/***********************ABOUT US**************************/
+.about-us{
+    background-color: var(--orange);
+    display: flex;
+    padding: 25px 0 50px 0;
+}
+
+.about-us .container{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+.about-us .container .intro{
+    padding: 0 25px 0 0;
+}
+
+.about-us .container .intro .title{
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--font-family1);
+    font-size: 6rem;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0 0 10px 0;
+    margin:0;
+}
+
+.about-us .container .intro .subtitle{
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0 0 10px 0;
+}
+
+.about-us .container .intro .description{
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    padding: 25px 0 0 0;
+}
+
+.about-us .container .intro{
+    width: 50%;
+}
+
+.about-us .container .logo{
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.about-us .container .text{
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    padding: 25px 0;
+}
+
+.about-us .container .logo-evolution .title{
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about-us .container .logo-evolution img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-us .container .artists{
+    padding: 25px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.about-us .container .artists .title{
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.about-us .container .artists .artist .name{
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about-us .container .artists .artist img{
+    width: 300px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media only screen and (max-width: 1230px) {
+
+    .about-us .container{
+        padding: 0 30px;
+    }
+
+    .about-us .container .intro{
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
+
+    .about-us .container .logo{
+        width: 100%;
+        max-width: initial;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+
+    .about-us .container .intro .title{
+        font-size: 2.7rem;
+    }
+    
+    .about-us .container .intro .subtitle{
+        font-size: 1.5rem;
+    }
+    
+    .about-us .container .intro .description{
+        font-size: 1.25rem;
+    }
+
+    .about-us .container .text {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .about-us .container .logo {
+        width: 80%;
+    }
+
+    .about-us .container .logo-evolution img {
+        height: 300px;
+        width: 80%;
+    }
+
+    .about-us .container .artists .artist img {
+        width: 200px;
+        height: 400px;
+    }
+
+    .about-us .container .artists .artist, .about-us .container .logo-evolution {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+/***********************END ABOUT US**************************/
+
+/***********************NEWS DETAILS**************************/
+.news-banner {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.news-banner .image {
+    position: relative;
+    width: 100%;
+}
+
+.news-banner .image::after{
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.news-banner .image img{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news-banner .content{
+    padding: 0px 60px;
+    position: absolute;
+    color: var(--white);
+    bottom: 0;
+    max-width: 800px;
+}
+
+.news-banner .content p{
+    padding-bottom: 20px;
+}
+
+.news-banner .content .date{
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
+.news-banner .content .title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.news{
+    background-color: var(--orange);
+    padding: 25px 0;
+}
+
+.news .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+.news .container .text{
+    padding: 15px 0;
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.news .container .video{
+    padding: 15px 0;
+    height: 500px;
+    width: 74%;
+}
+
+/***********************END NEWS DETAILS**************************/
+
+/***********************DISC DETAILS**************************/
+.disc{
+    background-color: var(--orange);
+    padding: 25px 0;
+}
+
+.disc .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+.disc .container .info{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.disc .container .info .artist, .disc .container .info .album{
+    width: 100%;
+}
+
+.disc .container .info .artist{
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 5rem;
+    font-weight: 500;
+    font-style: normal;
+    padding: 25px 0 10px 0;
+    margin:0;
+}
+
+.disc .container .info .album{
+    color: var(--white);
+    font-family: var(--font-family2);
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0 0 10px 0;
+}
+
+.disc .container .cover{
+    display: flex;
+    justify-content: center;
+    max-width: 590px;
+    width: 100%;
+}
+
+.disc .container .cover img{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: var(--transition);
+}
+
+.disc .container .tracklist{
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.disc .container .tracklist > :first-child {
+    border-top: var(--white) 1px solid;
+}
+
+.disc .container .tracklist li{
+    padding: 10px 0;
+    list-style: none;
+    color: var(--white);
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    width: 100%;
+    border: var(--white) 1px solid;
+    border-top: none;
+}
+
+/*********************** END DISC DETAILS**************************/
