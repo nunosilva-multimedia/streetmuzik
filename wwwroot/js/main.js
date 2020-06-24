@@ -9,45 +9,17 @@ $(window).scroll(function() {
     }
 });
 
-$('header .navBtn').click(function(){
-    $('header .navBtn').addClass('animate');
+$('header .btn').click(function(){
+    $('header .btn span').addClass('animate');
+    $('header nav .header .close span').removeClass('animate');
     $('nav').addClass('open');
 });
 
-$('nav .header .closeBtn').click(function(){
-    $('header .navBtn').removeClass('animate');
+$('header nav .header .close').click(function(){
+    $('header nav .header .close span').addClass('animate');
+    $('header .btn span').removeClass('animate');
     $('nav').removeClass('open');
 });
-
-let triggers = document.querySelectorAll('[data-toggle="dropdown"]');
-let containers = document.querySelectorAll('.dropdown-menu');
-
-for (var i = 0; i < triggers.length; i++) {
-
-    triggers[i].onclick = function (e) {
-        e.stopPropagation();
-
-        let target = document.getElementById(this.dataset.target);
-
-        for (var j = 0; j < containers.length; j++) {
-
-            if (containers[j].id != this.dataset.target) {
-                containers[j].style.display = 'none';
-            }
-        }
-
-        if (target.style.display === 'none' || target.style.display === '') {
-            $('nav > ul li .btn').toggleClass('rotate');
-            $('nav > ul li > ul').toggleClass('open');
-        }
-    }
-}
-
-window.onclick = function () {
-    for (var j = 0; j < containers.length; j++) {
-        containers[j].style.display = 'none';
-    }
-}
 
 $(document).ready(function () {
     $('.hp-banner .slider').slick({
@@ -59,11 +31,5 @@ $(document).ready(function () {
         speed: 1250,
         fade: false,
         arrows: false,
-    });
-
-    $('.news-banner .slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
     });
 });
