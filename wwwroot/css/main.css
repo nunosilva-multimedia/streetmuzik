@@ -986,10 +986,6 @@ footer > p a:hover{
 
 @media only screen and (max-width: 375px) {
 
-    .about-us .container .logo {
-        width: 80%;
-    }
-
     .about-us .container .logo-evolution img {
         height: 300px;
         width: 80%;
