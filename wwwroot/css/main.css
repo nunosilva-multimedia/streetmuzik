@@ -166,8 +166,8 @@ header nav .header{
         width: inherit;
         height: 2px;
         background-color: #fff;
-        transition: width .2s;
-        -webkit-transition: width .2s;
+        transition: all .1s;
+        -webkit-transition: all .1s;
     }
 
     header > .btn span:first-child {
@@ -176,6 +176,10 @@ header nav .header{
 
     header > .btn span:last-child {
         bottom: 20px;
+    }
+
+    header.fixed nav .header{
+        border-bottom: #000 2px solid;
     }
 
     header nav .header > .close{
@@ -194,32 +198,48 @@ header nav .header{
         width: 30px;
         height: 2px;
         background-color: #fff;
-        transition: width .2s;
-        -webkit-transition: width .2s;
+        transition: all .2s;
+        -webkit-transition: all .2s;
     }
 
     header.fixed > .btn span, header.fixed nav .header > .close span {
         background-color: #000;
     }
 
-    header nav .header > .close span.animate{
-        width: 0;
+    header.fixed .header > .title {
+        color: #000;
     }
 
-    header nav .header > .close span:first-child{
+    header nav .header > .close{
+        margin: 0 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    header nav .header > .close span{
+        position: relative;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        transition: all .2s;
+        -webkit-transition: all .2s;
+    }
+    
+    header nav .header > .close span.first, header nav .header > .close span.second{
         position: absolute;
+    }
+    
+    header nav .header > .close span.first.animate{
         transform: rotate(45deg);
     }
-
-    header nav .header > .close span:last-child{
-        position: absolute;
+    
+    header nav .header > .close span.second.animate{
         transform: rotate(-45deg);
-    }
-
-    header.fixed .header{
-        background-color: #fff;
-        color: #000;
-        border-bottom: #000 2px solid;
     }
 
     header nav{
@@ -232,8 +252,8 @@ header nav .header{
         max-width: 210px;
         flex-wrap: wrap;
         width: 100%;
-        transition: all 2s;
-        -webkit-transition: all 2s;
+        transition: all 1.2s;
+        -webkit-transition: all 1.2s;
         padding: 30px;
         right: -360px; top: 0;
     }

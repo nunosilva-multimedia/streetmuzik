@@ -9,16 +9,58 @@ $(window).scroll(function() {
     }
 });
 
-$('header .btn').click(function(){
-    $('header .btn span').addClass('animate');
-    $('header nav .header .close span').removeClass('animate');
-    $('nav').addClass('open');
+$('header > .btn').click(function(){
+
+    var tl = anime.timeline({
+        targets: 'header > .btn'
+      });
+    
+    tl.add({
+        targets: 'header > .btn span',
+        update: function(){
+            $('header > .btn span').addClass('animate');
+        },
+        duration: 250
+    }).add({
+        targets: 'header > .btn span',
+        update: function(){
+            $('nav').addClass('open');
+        },
+        delay: 250
+    }).add({
+        update: function(){
+            $('header nav .header > .close span.first').addClass('animate');
+            $('header nav .header > .close span.second').addClass('animate');
+        },
+        delay: 250
+    });
+
 });
 
 $('header nav .header .close').click(function(){
-    $('header nav .header .close span').addClass('animate');
-    $('header .btn span').removeClass('animate');
-    $('nav').removeClass('open');
+    
+    var tl = anime.timeline({
+        targets: 'header nav .header .close'
+    });
+    
+    tl.add({
+        update: function(){
+            $('header nav .header > .close span.first').removeClass('animate');
+            $('header nav .header > .close span.second').removeClass('animate');
+        },
+        duration: 100
+    }).add({
+        targets: 'header > .btn span',
+        update: function(){
+            $('nav').removeClass('open');
+        }
+    }).add({
+        targets: 'header > .btn span',
+        update: function(){
+            $('header > .btn span').removeClass('animate');
+        }
+    });
+
 });
 
 $(document).ready(function () {
